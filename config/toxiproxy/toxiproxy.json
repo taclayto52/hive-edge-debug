@@ -1,0 +1,9 @@
+[
+  {
+    "name": "edge-a-to-b-mqtt",
+    "listen": "0.0.0.0:8666",
+    "upstream": "edge-b:1883",
+    "enabled": true,
+    "toxics": []
+  }
+]

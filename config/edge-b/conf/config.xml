@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hivemq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="config.xsd">
+
+  <mqtt>
+    <receive-maximum>
+      <server-receive-maximum>20</server-receive-maximum>
+    </receive-maximum>
+    <queued-messages>
+      <max-queue-size>5000</max-queue-size>
+      <strategy>discard-oldest</strategy>
+    </queued-messages>
+  </mqtt>
+
+  <mqtt-listeners>
+    <tcp-listener>
+      <port>1883</port>
+      <bind-address>0.0.0.0</bind-address>
+    </tcp-listener>
+  </mqtt-listeners>
+
+  <admin-api>
+    <enabled>true</enabled>
+    <listeners>
+      <http-listener>
+        <bind-address>0.0.0.0</bind-address>
+        <port>8080</port>
+      </http-listener>
+    </listeners>
+  </admin-api>
+
+</hivemq>
