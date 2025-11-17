@@ -54,7 +54,7 @@ python3 scripts/mqtt-publish-burst.py --host localhost --port 1883 --topic "test
 3. Inject a `limit_data` type toxic into the ToxiProxy instance:
 
 ```
-./toxiproxy-toxics.sh temporary limit 30 
+./scripts/toxiproxy-toxics.sh temporary limit 30 
 ```
 
 This enables a toxic that temporarily simulates a network that closes in the middle of message being sent over the bridge. 
